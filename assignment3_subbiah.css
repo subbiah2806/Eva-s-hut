@@ -1,0 +1,247 @@
+.container {
+    margin: 0 auto;
+    /*max-width: 1600px;*/
+
+}
+* {
+    box-sizing: border-box;
+}
+div{
+    display: block;
+}
+.column_right{
+    display: inline-block;
+
+}
+@media (max-width: 640px){
+    .column_left{
+        display: none;
+    }
+}
+@media (min-width: 640px){
+    .column_left{
+        display: inline-block;
+    }
+}
+
+.column_left img{
+    width: 80px;
+    height: 55px;
+    padding: 9px 0px 0px 10px;
+}
+.column_left span{
+    float: right;
+    padding: 25px 16px;
+}
+.column_right{
+    padding-left: 20px;
+    float: right;
+}
+.column_right img{
+    width: 80px;
+    height: 55px;
+    padding: 9px 0px 0px 10px;
+}
+.column_right span:first-of-type{
+    text-align: right;
+    float: left;
+}
+.column_right span:last-of-type{
+    float:right;
+}
+.column_right span:first-of-type div:nth-child(1){
+    font-size: 15px;
+}
+.column_right span:first-of-type div:nth-child(2){
+    font-size: 30px;
+}
+.column_right span:first-of-type div:nth-child(3){
+    font-size: 10px;
+}
+.user_menu{
+    padding: 26px 0px;
+}
+
+.active {
+    background-color: #ff671b;
+}
+.user_menu_sub1 li button:hover {
+    background-color: grey;
+}
+.user_menu_sub1 li button {
+    border: 0px;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.user_menu_sub1 li {
+    float: right;
+}
+.user_menu_sub1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+.first_section{
+    /*margin-bottom: 20px;*/
+    /*position:relative;*/
+    background-color: #ff671b;
+}
+.ordering_content_right{
+    color: #000;
+    dispaly: inline-block;
+    position: relative;
+    /* left: 17%; */
+    max-width: 280px;
+    max-height: 254.5px;
+    /* text-align: left; */
+    padding: 45px 10px 95px 36px;
+    margin-left: 3.17%;
+}
+.ordering_content_right_startyourorder{
+    font-size:16px;
+    border: 2px solid #000000;
+    border-radius: 15px ;
+    padding: 6px 30px;
+    font-family: sans-regular-ultra,sans-serif;
+    text-transform: uppercase;
+}
+.ordering_content_right a{
+    text-decoration: none;
+}
+.ordering_content_left img{
+    position: absolute;
+    display: inline-block;
+    width: 335px;
+    height: 255px;
+    right: 8px;
+    /* z-index: 0; */
+    /* float: right; */
+}
+.category_of_menu a{
+    min-width: 236px;
+    text-decoration: none;
+    min-height: 254.5px;
+    text-align: center;
+    list-style-type: none;
+    background-color: #ff671b;
+    padding-top: 10px;
+    width: 25%;
+    margin-bottom: 20px;
+
+}
+.category_of_menu a:nth-child(1),.category_of_menu a:nth-child(2),.category_of_menu a:nth-child(3){
+    margin-right: 1.262626%;
+}
+.category_of_menu{
+    display:flex;
+}
+
+.total{
+    /*background-image: url("black_gradient.jpg");*/
+    min-height: 100%;
+}
+#header_total{
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(temp5.png);
+    opacity: .8;
+}
+/*.header_total>img{
+    position: absolute;
+    z-index: 20;
+}*/
+.parallex{
+    min-height: 254.5px;
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(temp5.png);
+    opacity: 0.80;
+}
+/*#NewLicenseForm{*/
+    /*display:none;*/
+    /*position: absolute;*/
+    /*z-index: 10;*/
+    /*right: 32%;*/
+/*}*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #ff671bbd;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 85%;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+#header_top1{
+    padding-top:10px;
+    min-height: 79px;
+}
+.horizontal_scrolling{
+    overflow-x: scroll;
+}
+/*.column_right::after{*/
+    /*content: "aaaaa";*/
+    /*clear:both;*/
+    /*display:block;*/
+/*}*/
+.fourth_section{
+    min-height: 254.5px;
+}
+.fifth_section{
+    min-height: 254.5px;
+}

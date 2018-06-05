@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EVA'S Hut</title>
+    <link href="assignment3_subbiah.css" rel="stylesheet"/>
+    <link href="form_page1.css" rel="stylesheet"/>
+    <link href="responsive.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="total">
+        <header>
+            <div id="header_total">
+                <!--<img src="tan.jpg">-->
+                <div class="container">
+                    <div id="header_top1">
+                        <div class="column_left">
+                            <img src="logo-1.jpeg" alt="logo-1" >
+                            <span >EVA'S Hut</span>
+                        </div>
+                        <div class="column_right">
+                        <span class="column_right_span1">
+                            <div>Your Nearest Location</div>
+                            <div>403 W Lott Avenue</div>
+                            <div>Change location</div>
+                        </span>
+                            <span >
+                            <img src="orderlogo.png" alt="orderlogo">
+                        </span>
+                        </div>
+                    </div>
+                    <nav class="user_menu">
+                        <div class="container">
+                            <div class="user_menu_sub1">
+                                <ul>
+                                    <li><button href="form_page.html" class="active">Login</button></li>
+                                    <li><button id="myBtn">Join</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="main_total">
+                <section class="first_section">
+                    <div class="container">
+                        <div class="ordering_content">
+                            <div class="ordering_content_left">
+                                <picture>
+                                    <!--<source srcset=".jpg" media="(max-width: 600px)">-->
+                                    <img src="pizza.png" alt="logo-1" >
+                                </picture>
+                            </div>
+                            <div class="ordering_content_right">
+                                <h2>ONLINE ORDERING NOW AVAILABLE</h2>
+                                <a href="form_page.html">
+                                    <span class="ordering_content_right_startyourorder">start your order</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="second_section">
+                    <div class="container">
+                        <div id="paralex_id" class="parallex">
+
+                        </div>
+                    </div>
+                </section>
+                <section class="third_section">
+                    <div class="container">
+                        <div class="horizontal_scrolling">
+                            <div class="category_of_menu">
+                                <a href="https://www.google.com/">
+                                    <h3>pizza</h3>
+                                </a>
+                                <a href="https://www.google.com/">
+                                    <h3>Drink</h3>
+                                </a>
+                                <a href="https://www.google.com/">
+                                    <h3>Side</h3>
+                                </a>
+                                <a href="https://www.google.com/">
+                                    <h3>Dessert</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="fourth_section">
+
+                </section>
+                <section class="fifth_section">
+
+                </section>
+            </div>
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form id="NewLicenseForm">
+                        <!--name-->
+                        <div>
+                            <label for="name" id="label1" >Name:</label>
+                            <input type="text" id="name" name="name_1" placeholder="Enter name" />
+                        </div>
+                        <!--Address-->
+                        <div>
+                            <label for="address" id="label2">Address:</label>
+                            <input type="text" id="address" name="address_1" placeholder="Enter your address" />
+                        </div>
+                        <!--Email-->
+                        <div>
+                            <label for="email" id="label3">Email Address:</label>
+                            <input type="email" id="email" name="email_1" placeholder="Enter your email" />
+                        </div>
+                        <!--conform Email-->
+                        <div>
+                            <label for="conform_email" id="label4">Confirm Email Address:</label>
+                            <input type="email" id="conform_email" name="conform_email_1" placeholder="Confirm Email"/>
+                        </div>
+                        <!--phone number-->
+                        <div>
+                            <label for="phone_number" id="label5">Phone Number:</label>
+                            <input type="number" id="phone_number" name="phone_number_1" placeholder="Phone number"/>
+                            <input type="number" id="phone_number_ext" name="phone_number_ext_1" placeholder="Ext"/>
+                        </div>
+                        <!--password-->
+                        <div>
+                            <label for="password" id="label6">Password:</label>
+                            <input type="password" id="password" name="password_1" />
+                        </div>
+                        <!--Pizza rewards-->
+                        <div>
+                            <input type="checkbox" id="pizza_rewards" name="pizza_rewards_1"/>
+                            <label for="pizza_rewards" class="pizza_rewards_label">Do you want to enroll in pizza rewards</label>
+                        </div>
+                        <!--submit button-->
+                        <div>
+                            <button type="submit" id="submit" name="submit">
+                                <snap>Create your profile</snap>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('myModal');
+
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks the button, open the modal
+                    btn.onclick = function() {
+                        modal.style.display = "block";
+                        main_total.style.opacity=".1";
+                        header_total.style.opacity=".1";
+                    }
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                        main_total.style.opacity="1";
+                        header_total.style.opacity=".8";
+                    }
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                            main_total.style.opacity="1";
+                            header_total.style.opacity=".8";
+                        }
+                    }
+                </script>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
