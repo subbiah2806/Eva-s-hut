@@ -4,7 +4,3 @@
 
 
 SORRY PROJECT CLOSED TEMPORARILY.
-
-git remote rm heroku
-git remote add heroku https://git.heroku.com/morning-ridge-24357.git
-git push heroku master
